@@ -168,7 +168,7 @@ static void MX_GPIO_Init(void)
 void ex4_run(){
 	if (counter >= 10)
 		counter = 0;
-	display7SEG(counter++);
+	display7SEG(9);
 	HAL_Delay(1000);
 
 }
