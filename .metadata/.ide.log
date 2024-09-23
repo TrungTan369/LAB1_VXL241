@@ -538,3 +538,35 @@
 2024-09-23 14:34:08,374 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
 2024-09-23 14:34:08,374 [INFO] ApiDb:276 - Save user favorites file C:\Users\nguye/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2024-09-23 14:34:08,374 [INFO] ApiDb:280 - User favorites MCUs=[]
+2024-09-23 14:37:45,656 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 862052016 Bytes (1010827264)
+2024-09-23 14:37:51,960 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 898679776 Bytes (1010827264)
+2024-09-23 14:37:54,799 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 871276048 Bytes (1010827264)
+2024-09-23 14:37:54,961 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2024-09-23 14:37:54,961 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2024-09-23 14:37:54,961 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2024-09-23 14:37:54,961 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2024-09-23 14:37:54,961 [INFO] CodeGenerator:663 - code generatio: config db path: D:\STM32CUBE\STM32cubeIDE\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2024-09-23 14:37:55,120 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\license.tmp_save
+2024-09-23 14:37:55,180 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\license.tmp
+2024-09-23 14:37:55,230 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\gpio.tmp_save
+2024-09-23 14:37:55,273 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\gpio.tmp
+2024-09-23 14:37:55,289 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Src\stm32f1xx_it.c_save
+2024-09-23 14:37:55,340 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Src\stm32f1xx_it.c
+2024-09-23 14:37:55,349 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Inc\stm32f1xx_it.h_save
+2024-09-23 14:37:55,380 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Inc\stm32f1xx_it.h
+2024-09-23 14:37:55,391 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-23 14:37:55,439 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Src\stm32f1xx_hal_msp.c
+2024-09-23 14:37:55,444 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\system.tmp_save
+2024-09-23 14:37:55,471 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\MXTmpFiles\system.tmp
+2024-09-23 14:37:55,480 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-23 14:37:55,551 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-23 14:37:55,570 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Inc\main.h_save
+2024-09-23 14:37:55,620 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Inc\main.h
+2024-09-23 14:37:55,630 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL-VDK\LAB1\LED_animation\Core\Src\main.c_save
+2024-09-23 14:37:55,711 [INFO] CodeEngine:257 - Generated code: D:\VXL-VDK\LAB1\LED_animation\Core\Src\main.c
+2024-09-23 14:37:56,149 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 16mS.
+2024-09-23 14:37:56,159 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2024-09-23 14:37:56,640 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2024-09-23 14:37:58,001 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1842mS.
+2024-09-23 14:37:58,009 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2024-09-23 14:37:58,011 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
