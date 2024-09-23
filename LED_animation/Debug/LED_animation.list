@@ -37,11 +37,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00015596  00000000  00000000  000245e8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00004562  00000000  00000000  00039b7e  2**0
+ 17 .debug_line   00004560  00000000  00000000  00039b7e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007990d  00000000  00000000  0003e0e0  2**0
+ 18 .debug_str    0007990d  00000000  00000000  0003e0de  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000b79ed  2**0
+ 19 .comment      00000053  00000000  00000000  000b79eb  2**0
                   CONTENTS, READONLY
  20 .debug_frame  00000d48  00000000  00000000  000b7a40  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -290,86 +290,81 @@ static void MX_GPIO_Init(void)
 void ex3_run(){
  8000254:	b580      	push	{r7, lr}
  8000256:	af00      	add	r7, sp, #0
-
-		// way 1 _ led red on _
-		// way 2 _ led green on
-		HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, SET); // red 1 on
+	HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, SET); // red 1 on
  8000258:	2201      	movs	r2, #1
  800025a:	2101      	movs	r1, #1
  800025c:	4825      	ldr	r0, [pc, #148]	; (80002f4 <ex3_run+0xa0>)
  800025e:	f000 fbbb 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, SET); // green 2 on
+	HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, SET); // green 2 on
  8000262:	2201      	movs	r2, #1
  8000264:	2108      	movs	r1, #8
  8000266:	4823      	ldr	r0, [pc, #140]	; (80002f4 <ex3_run+0xa0>)
  8000268:	f000 fbb6 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, RESET);  // red 2  off
+	HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, RESET);  // red 2  off
  800026c:	2200      	movs	r2, #0
  800026e:	2120      	movs	r1, #32
  8000270:	4820      	ldr	r0, [pc, #128]	; (80002f4 <ex3_run+0xa0>)
  8000272:	f000 fbb1 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, RESET);   // yellow 1 off
+	HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, RESET);   // yellow 1 off
  8000276:	2200      	movs	r2, #0
  8000278:	2102      	movs	r1, #2
  800027a:	481e      	ldr	r0, [pc, #120]	; (80002f4 <ex3_run+0xa0>)
  800027c:	f000 fbac 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_Delay(3000);
+	HAL_Delay(3000);
  8000280:	f640 30b8 	movw	r0, #3000	; 0xbb8
  8000284:	f000 f926 	bl	80004d4 <HAL_Delay>
 
-		HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, RESET);  // green 2 off
+	HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin, RESET);  // green 2 off
  8000288:	2200      	movs	r2, #0
  800028a:	2108      	movs	r1, #8
  800028c:	4819      	ldr	r0, [pc, #100]	; (80002f4 <ex3_run+0xa0>)
  800028e:	f000 fba3 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, SET);   // yellow  2 on
+	HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, SET);   // yellow  2 on
  8000292:	2201      	movs	r2, #1
  8000294:	2110      	movs	r1, #16
  8000296:	4817      	ldr	r0, [pc, #92]	; (80002f4 <ex3_run+0xa0>)
  8000298:	f000 fb9e 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_Delay(2000);
+	HAL_Delay(2000);
  800029c:	f44f 60fa 	mov.w	r0, #2000	; 0x7d0
  80002a0:	f000 f918 	bl	80004d4 <HAL_Delay>
 
-		HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, RESET); // red 1 off
+	HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, RESET); // red 1 off
  80002a4:	2200      	movs	r2, #0
  80002a6:	2101      	movs	r1, #1
  80002a8:	4812      	ldr	r0, [pc, #72]	; (80002f4 <ex3_run+0xa0>)
  80002aa:	f000 fb95 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, SET);  // green 1 on
+	HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, SET);  // green 1 on
  80002ae:	2201      	movs	r2, #1
  80002b0:	2104      	movs	r1, #4
  80002b2:	4810      	ldr	r0, [pc, #64]	; (80002f4 <ex3_run+0xa0>)
  80002b4:	f000 fb90 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, RESET);   // yellow 2 off
+	HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin, RESET);   // yellow 2 off
  80002b8:	2200      	movs	r2, #0
  80002ba:	2110      	movs	r1, #16
  80002bc:	480d      	ldr	r0, [pc, #52]	; (80002f4 <ex3_run+0xa0>)
  80002be:	f000 fb8b 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, SET);  // red 2  on
+	HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin, SET);  // red 2  on
  80002c2:	2201      	movs	r2, #1
  80002c4:	2120      	movs	r1, #32
  80002c6:	480b      	ldr	r0, [pc, #44]	; (80002f4 <ex3_run+0xa0>)
  80002c8:	f000 fb86 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_Delay(3000);
+	HAL_Delay(3000);
  80002cc:	f640 30b8 	movw	r0, #3000	; 0xbb8
  80002d0:	f000 f900 	bl	80004d4 <HAL_Delay>
 
-		HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, RESET); // green 1 off
+	HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, RESET); // green 1 off
  80002d4:	2200      	movs	r2, #0
  80002d6:	2104      	movs	r1, #4
  80002d8:	4806      	ldr	r0, [pc, #24]	; (80002f4 <ex3_run+0xa0>)
  80002da:	f000 fb7d 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, SET);   // yellow 1 on
+	HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, SET);   // yellow 1 on
  80002de:	2201      	movs	r2, #1
  80002e0:	2102      	movs	r1, #2
  80002e2:	4804      	ldr	r0, [pc, #16]	; (80002f4 <ex3_run+0xa0>)
  80002e4:	f000 fb78 	bl	80009d8 <HAL_GPIO_WritePin>
-		HAL_Delay(2000);
+	HAL_Delay(2000);
  80002e8:	f44f 60fa 	mov.w	r0, #2000	; 0x7d0
  80002ec:	f000 f8f2 	bl	80004d4 <HAL_Delay>
-
-
 }
  80002f0:	bf00      	nop
  80002f2:	bd80      	pop	{r7, pc}
