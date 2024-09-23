@@ -49,7 +49,7 @@ int led_state = 1;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-void ex1_run();
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
