@@ -91,7 +91,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  //ex5_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -135,9 +134,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void ex5_run(){
 
-}
 /* USER CODE END 4 */
 
 /**
