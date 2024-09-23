@@ -58,32 +58,46 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SEG_0_Pin GPIO_PIN_7
-#define SEG_0_GPIO_Port GPIOA
-#define LED_1_Pin GPIO_PIN_0
-#define LED_1_GPIO_Port GPIOB
-#define LED_2_Pin GPIO_PIN_1
-#define LED_2_GPIO_Port GPIOB
-#define LED_3_Pin GPIO_PIN_2
-#define LED_3_GPIO_Port GPIOB
-#define SEG_1_Pin GPIO_PIN_8
-#define SEG_1_GPIO_Port GPIOA
-#define SEG_2_Pin GPIO_PIN_9
-#define SEG_2_GPIO_Port GPIOA
-#define SEG_3_Pin GPIO_PIN_10
-#define SEG_3_GPIO_Port GPIOA
-#define SEG_4_Pin GPIO_PIN_11
-#define SEG_4_GPIO_Port GPIOA
-#define SEG_5_Pin GPIO_PIN_12
-#define SEG_5_GPIO_Port GPIOA
-#define SEG_6_Pin GPIO_PIN_13
-#define SEG_6_GPIO_Port GPIOA
-#define LED_4_Pin GPIO_PIN_3
-#define LED_4_GPIO_Port GPIOB
-#define LED_5_Pin GPIO_PIN_4
-#define LED_5_GPIO_Port GPIOB
-#define LED_6_Pin GPIO_PIN_5
-#define LED_6_GPIO_Port GPIOB
+#define LG_Pin GPIO_PIN_4
+#define LG_GPIO_Port GPIOA
+#define LR_Pin GPIO_PIN_5
+#define LR_GPIO_Port GPIOA
+#define LY_Pin GPIO_PIN_6
+#define LY_GPIO_Port GPIOA
+#define S0_Pin GPIO_PIN_7
+#define S0_GPIO_Port GPIOA
+#define S3B_Pin GPIO_PIN_10
+#define S3B_GPIO_Port GPIOB
+#define S4B_Pin GPIO_PIN_11
+#define S4B_GPIO_Port GPIOB
+#define S5B_Pin GPIO_PIN_12
+#define S5B_GPIO_Port GPIOB
+#define S6B_Pin GPIO_PIN_13
+#define S6B_GPIO_Port GPIOB
+#define S1_Pin GPIO_PIN_8
+#define S1_GPIO_Port GPIOA
+#define S2_Pin GPIO_PIN_9
+#define S2_GPIO_Port GPIOA
+#define S3_Pin GPIO_PIN_10
+#define S3_GPIO_Port GPIOA
+#define S4_Pin GPIO_PIN_11
+#define S4_GPIO_Port GPIOA
+#define S5_Pin GPIO_PIN_12
+#define S5_GPIO_Port GPIOA
+#define S6_Pin GPIO_PIN_13
+#define S6_GPIO_Port GPIOA
+#define LGB_Pin GPIO_PIN_4
+#define LGB_GPIO_Port GPIOB
+#define LRB_Pin GPIO_PIN_5
+#define LRB_GPIO_Port GPIOB
+#define LYB_Pin GPIO_PIN_6
+#define LYB_GPIO_Port GPIOB
+#define S0B_Pin GPIO_PIN_7
+#define S0B_GPIO_Port GPIOB
+#define S1B_Pin GPIO_PIN_8
+#define S1B_GPIO_Port GPIOB
+#define S2B_Pin GPIO_PIN_9
+#define S2B_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
